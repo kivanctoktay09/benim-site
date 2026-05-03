@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+  <meta charset = "UTF-8">                                               <!--Bütün karakterleri kullanabiliyoruz (karakter = harf)-->
+  <meta name="description" content="1 Saatte HTML Öğren">
+  <meta name="keywords" content="html,websitesi">
+  <meta name="author" content="kivanc@gmail.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Web sitesini o cihaza göre ölçeklendir-->
+       <title> Hosgeldin</title> 
+    </head>
+    <body>
+<h1>TEMEL</h1>
+
+<h1>Sa</h1> <!-- En büyük ve "h" Etiketleri yazının büyüklüğünü belirler -->
+<br> <!-- boşluk bırakır-->    
+<p>HTML tekrarliyorum</p> <!-- paragraf-->
+<hr>  <!-- Uzun bir ayrıan çizgi -->
+<h2>Sa</h2>
+<h3>Sa</h3>
+<h4>Sa</h4>
+<h5>Sa</h5>
+<h6>Sa</h6>
+  <hr><!------------------------------------------------------------------------------------------------------------------------------>
+<p>Sirasiz liste</p>
+ <ul>
+    <li>Süt</li>
+    <li>Domates</li>
+    <li>Ekmek</li>
+ </ul>
+
+ <p>Sirali liste</p>
+ <ol>
+    <li>Süt</li>
+    <li>Domates</li>
+    <li>Ekmek</li>
+ </ol>
+
+ <p>Açiklamali liste</p>
+<dl>
+    <dt>HTML</dt>
+    <dd>Web elemanlarini göstermeye yarar</dd>
+</dl>
+ 
+  <hr><!------------------------------------------------------------------------------------------------------------------------------>
+<p>Bu normal bir yazi</p>
+<p>Bu <b>Kalin</b> bir yazi</p>
+<p>Bu <i>İtalik</i> bir yazi</p>
+<p>Bu <bdi>Büyük</bdi>bir yazi</p>
+<p>Bu <small>Küçük</small> bir yazi</p>
+<p>Bu <u>Alti çizili</u> bir yazi</p>
+<p>Buda <ins>Alti çizili</ins> bir yazi</p>
+<p>Bu <del>Üstü çizli</del> bir yazi</p>
+<p>Bu <mark>Üstü sanki fosforla çizilmiş</mark>bir yazi</p>
+  <hr><!------------------------------------------------------------------------------------------------------------------------------>
+
+<p>Tablo</p>
+  <table bgcolor="black">              <!--Tablo için <table> etikeni açıyoruz-->
+    <tr bgcolor="grey">                <!--Kaç satır istiyorsak o kadar <tr> etiketi yazıyoruz-->
+      <th width ="80">Pazartesi</th>   <!-- Kaç sütun istiyorsak o kadar <th> etiketi yazıyoruz-->
+      <th width ="80">Sali</th>        <!-- Açıklamarı için ise <td> etiketi kullanıyoruz-->
+      <th width ="80">Çarşamba</th>    <!-- bgcolor = arkaplan rengi (sanırım ara çizgide olabilir anlamadım)/// align = yazının sağda mı soldamı veya ortada mı olduğunu belirler-->
+      <th width ="80">Perşembe</th>
+      <th width ="80">Cuma</th>
+      <th width ="80">Cumartesi</th>
+      <th width ="80">Pazar</th>
+    </tr>
+
+    <tr align="center" bgcolor="lightgrey">
+      <td width ="80">9-5</td>
+      <td width ="80">9-5</td>
+      <td width ="80">9-5</td>
+      <td width ="80">9-5</td>
+      <td width ="80">9-5</td>
+      <td width ="80">Kapali</td>
+      <td width ="80">Kapali</td>
+    </tr>
+  </table>
+
+
+  <hr><!------------------------------------------------------------------------------------------------------------------------------>
+  <div style = "background-color: rgb(32, 127, 210);">Bu bir div</div>
+  <span style = "background-color:rgb(255,0,0);">Bu bir span </span>
+  <hr><!------------------------------------------------------------------------------------------------------------------------------>
+
+<h1>LİNK</h1>
+
+<a href="https://www.youtube.com" 
+target = "_blank"
+title = "Youtubeye götürür"
+>Youtube</a> 
+<!-- <a href = "https://www.youtube.com"   ] seni youtubeye götürür
+      target = "_blank" ile birlikte linke basıldığı zaman yeni sitede youtubeye götürür
+       title = "Youtebe götürür" ise mouse linkin üstünde bırakıldı zaman yazı yazdırır-->
+
+<hr><!------------------------------------------------------------------------------------------------------------------------------>
+
+<h1>GÖRSEL</h1>
+
+    <img src = "cat.jpg" width="500px" height="200px" alt="Kedi"> <!-- img = image yani görsel-->
+    <p>pixabay.com</p>                                            <!-- src = source yani kaynak/// src kısmına fotoğrafın ismi yazılcak-->
+                                                                  <!--  width ve height ise fotoğrafın en ve boyunu belirliyor-->
+
+<hr><!------------------------------------------------------------------------------------------------------------------------------>
+
+<h1>SES</h1>
+ <audio src = "mixaund-motivate-me.mp3" controls></audio>
+
+ <hr>
+ <h1>VİDEO</h1>
+  <video src = "13405057_1920_1080_24fps.mp4" width="400px" height = "300px" controls></video>
+
+  <hr><!------------------------------------------------------------------------------------------------------------------------------>
+  <iframe src="https://www.wikipedia.org"
+   frameborder="3" width = "600px" height = "600px" ></iframe>
+   <hr><!------------------------------------------------------------------------------------------------------------------------------>
+
+  <button onclick="tikla()" style="background-color: blueviolet; color: aliceblue; border-radius: 10px;">
+    Tikla
+  </button>                                                              <!--118-127 arası kodu anlatıyorum-->
+  <p id="123">Butona bas!</p>   <!--  fonksiyonu oluşturduk, isim koyduk. onclick="tıkla()"  demek yani butona bastığın zaman paragrafın idsi(123 yani p) Butona Bastınız olarak değişsin.Aslında küçük bir JS scripti yazdık-->
+  <script>                                                
+    function tikla()
+    {
+      document.getElementById("123").innerHTML="Butona Bastin!"
+    }
+  </script>
+
+ <hr><!------------------------------------------------------------------------------------------------------------------------------>
+   <form action=""></form>
+ <hr><!------------------------------------------------------------------------------------------------------------------------------>
+ 
+</body>
+    </body>                                                     
+</html
